@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ic_bg"
+   android:weightSum="10"
+    tools:context="com.onlineshop.marpar.marpar.veghotelonclick">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Hotel Name"
+        android:gravity="center"
+
+        android:textSize="20dp"
+        android:textColor="#c71515"
+        android:layout_weight="2"
+        android:id="@+id/hname"
+
+       />
+
+    <TextView
+        android:id="@+id/hdesc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+      android:gravity="center"
+        android:layout_below="@+id/hname"
+        android:layout_weight="2"
+        android:text="Description"
+        android:textColor="#1644de"
+
+        android:textSize="30dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+       <com.google.android.gms.maps.MapView
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/map1"
+           android:apiKey="AIzaSyDDmnXJEvi0b5QR1P2BZFG6vgfGmBgEaR8"
+           >
+
+       </com.google.android.gms.maps.MapView>
+
+    </FrameLayout>
+
+
+</LinearLayout>
+
